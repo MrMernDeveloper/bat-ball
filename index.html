@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .field{
+            height: 500px;
+           
+            width: auto;
+            border: 1px solid;
+        }
+        .field:hover .bat{
+            transform: rotate(-60deg);
+            transform-origin: top right;
+            
+            
+        }
+        .bat{
+            transition: transform .2s ease;
+        }
+        .ball{
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            border-radius: 25px;
+            left: 515px;
+            position: relative;
+            transition:  transform 1s ease-out .3s;
+            top:-40px;
+            
+        }
+          .field:hover .ball{
+            transform: translate(750px , -200px) ;
+        }
+    </style>
+</head>
+<body>
+    <div class="field">
+        <span><h1>for hitting the ball put your coursor on the bat</h1></span>
+        
+            <img class="bat" src="BAT.png" alt="">
+            <div class="ball"></div>
+        
+    </div>
+</body>
+</html>
